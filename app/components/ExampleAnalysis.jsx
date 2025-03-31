@@ -19,7 +19,7 @@ export default function ExampleAnalysis() {
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-6">
       <Card className="border border-gray-300 w-full max-w-3xl shadow-lg rounded-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-4xl font-light font-[Exo]">
+          <CardTitle className="text-4xl font-light font-light">
             Analysis Result
           </CardTitle>
         </CardHeader>

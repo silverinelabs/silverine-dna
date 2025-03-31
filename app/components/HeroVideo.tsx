@@ -19,7 +19,7 @@ export default function HeroVideo() {
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
-        <h1 className="text-6xl md:text-7xl font-[Exo]">Silverine Labs</h1>
+        <h1 className="text-6xl font-light md:text-7xl">Silverine Labs</h1>
         <p className="text-lg md:text-xl mt-4 max-w-2xl">
           Silverine is an AI-powered solution designed to analyze genetic data
           and predict BRCA1-related cancer risks. Our mission is to

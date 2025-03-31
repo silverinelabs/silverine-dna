@@ -2,7 +2,7 @@ export default function AboutUs() {
   return (
     <section className="relative py-16">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-light font-[Exo] underline mb-4">
+        <h2 className="text-4xl font-light font-semibold underline mb-4">
           About Us
         </h2>
       </div>
@@ -28,7 +28,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-500 mb-6 font-light text-justify font-[Roboto]">
+            <p className="text-lg text-gray-500 mb-6 font-light text-justify font-light">
               Silverine Labs is a research laboratory focused on applying AI to
               genomics, similar to the approach used in NVIDIA's Evo 2.
               Silverine Labs develops advanced AI models capable of
