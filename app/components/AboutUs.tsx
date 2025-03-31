@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
 export default function AboutUs() {
   return (
     <section className="relative py-16">
@@ -44,7 +41,10 @@ export default function AboutUs() {
               biotechnological solutions. The AI models developed by Silverine
               Labs are integrated with GPU-based computing platforms, leveraging
               architectures similar to NVIDIA BioNeMo to facilitate fast and
-              accurate analysis in biomolecular research. <a href="" className="text-blue-500">read more..</a>
+              accurate analysis in biomolecular research.{" "}
+              <a href="" className="text-blue-500">
+                read more..
+              </a>
             </p>
           </div>
         </div>
