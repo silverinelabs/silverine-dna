@@ -2,7 +2,7 @@ export default function AboutUs() {
   return (
     <section className="relative py-16">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-light font-semibold underline mb-4">
+        <h2 className="text-4xl font-light font-semibold underline mb-4" id="aboutUs">
           About Us
         </h2>
       </div>
