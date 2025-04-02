@@ -61,10 +61,10 @@ export default function Navbar() {
             <Link href="#" className="text-black hover:text-gray-300">
               Home
             </Link>
-            <Link href="#aboutUs" className="text-black hover:text-gray-300">
+            <Link href="/pages/about" className="text-black hover:text-gray-300">
               About Us
             </Link>
-            <Link href="#" className="text-black hover:text-gray-300">
+            <Link href="/pages/roadmap" className="text-black hover:text-gray-300">
               Roadmap
             </Link>
             <Link
@@ -122,7 +122,7 @@ export default function Navbar() {
       {/* Contract Address Card (Bottom-Right Corner) */}
       {isContractVisible && (
         <div className="fixed bottom-6 right-6 bg-white/20 backdrop-blur-md p-4 rounded-full shadow-lg max-w-xs">
-          <p className="text-xs text-black break-all">-</p>
+          <p className="text-xs text-black break-all">0xx095290knqveoqitj4pwab0pu</p>
         </div>
       )}
     </>

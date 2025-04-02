@@ -1,40 +1,102 @@
-"use client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
-
-export default function page() {
+export default function WhitePaper() {
   return (
-    <div className="relative flex flex-col items-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white p-6">
-      <div className="max-w-4xl w-full text-center space-y-6">
-        <h1 className="text-5xl font-bold tracking-tight">Whitepaper</h1>
-        <p className="text-lg text-gray-300 leading-relaxed">
-          Explore the in-depth research and technological advancements behind
-          our project. Download the full whitepaper below.
-        </p>
-        <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2">
-          <Download size={20} /> Download Whitepaper
-        </Button>
+    <section className="relative py-16">
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-light mb-4" id="whitePaper">
+          White Paper: Silverine Labs - AI-Driven Genetic Research and Molecular
+          Biology Solutions
+        </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-6xl w-full">
-        {["Introduction", "Technology", "Use Cases", "Roadmap"].map(
-          (section, index) => (
-            <Card
-              key={index}
-              className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-lg transition-transform transform hover:scale-105"
-            >
-              <CardHeader>
-                <CardTitle className="text-2xl text-white">{section}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300">
-                  A brief overview of the {section.toLowerCase()} section.
-                </p>
-              </CardContent>
-            </Card>
-          )
-        )}
+      <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="w-full md:w-1/2">
+            <h3 className="text-2xl font-semibold mb-4">Abstract</h3>
+            <p className="text-lg text-gray-500 mb-6 font-light text-justify">
+              Silverine Labs presents an advanced artificial intelligence (AI)
+              model developed to transform genetic research and molecular
+              biology. With the ability to analyze and predict genetic sequences
+              across various life forms—humans, plants, animals, and
+              bacteria—Silverine Labs aims to accelerate innovation in the
+              biotechnology, healthcare, and pharmaceutical industries.
+            </p>
+            <h3 className="text-2xl font-semibold mb-4">Introduction</h3>
+            <p className="text-lg text-gray-500 mb-6 font-light text-justify">
+              Silverine Labs is an AI-powered solution designed to address
+              challenges in genetic research by automating the interpretation of
+              genetic data, predicting gene functions, and designing synthetic
+              molecules. This platform is revolutionizing molecular biology
+              research and enabling breakthroughs in gene-based medicine and
+              genetic engineering.
+            </p>
+            <h3 className="text-2xl font-semibold mb-4">Core Capabilities</h3>
+            <ul className="list-disc pl-6 text-lg text-gray-500 mb-6">
+              <li>
+                <strong>Genetic Code Understanding and Analysis:</strong>{" "}
+                Silverine's AI model analyzes genetic sequences from various
+                organisms to provide deep insights into molecular structures.
+              </li>
+              <li>
+                <strong>Protein Structure and Function Prediction:</strong>{" "}
+                Silverine predicts protein structures and their functions,
+                offering precise insights into genetic mutations and their
+                impacts.
+              </li>
+              <li>
+                <strong>Molecular Design and Engineering:</strong> Silverine
+                designs synthetic molecular complexes such as CRISPR-Cas for
+                genetic engineering and molecular research.
+              </li>
+              <li>
+                <strong>Gene Function Prediction:</strong> Silverine can predict
+                gene functions without additional training, enabling rapid
+                discovery of gene-related information.
+              </li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/2">
+            <h3 className="text-2xl font-semibold mb-4">
+              Applications in Biotechnology and Healthcare
+            </h3>
+            <p className="text-lg text-gray-500 mb-6 font-light text-justify">
+              Silverine’s applications are vast and impactful in the
+              biotechnology and healthcare sectors. It enables gene-based
+              medicine, pharmaceutical research, and the design of innovative
+              molecular compounds. Silverine’s ability to design molecules and
+              predict gene functions paves the way for new drug development and
+              genetic engineering breakthroughs.
+            </p>
+            <h3 className="text-2xl font-semibold mb-4">
+              Global Accessibility and Security
+            </h3>
+            <p className="text-lg text-gray-500 mb-6 font-light text-justify">
+              Silverine is accessible globally, offering a secure and
+              easy-to-deploy solution for researchers and developers. It ensures
+              data security while providing powerful AI-driven tools for genetic
+              analysis and molecular biology.
+            </p>
+            <h3 className="text-2xl font-semibold mb-4">
+              Future Directions and Impact
+            </h3>
+            <p className="text-lg text-gray-500 mb-6 font-light text-justify">
+              The future of genetic research is bright with the continued
+              advancements in AI. Silverine Labs is poised to shape the future
+              of gene-based medicine and genetic engineering by driving
+              innovation and enhancing research capabilities worldwide.
+            </p>
+            {/* Button to download the PDF */}
+            <div className="mt-6">
+              <a
+                href="path-to-your-white-paper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-teal-500 text-white font-medium text-lg rounded-lg transition duration-300"
+              >
+                Download White Paper
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
