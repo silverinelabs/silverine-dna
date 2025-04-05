@@ -1,46 +1,56 @@
-export default function AboutUs() {
+"use client";
+import { motion } from "framer-motion";
+
+export default function AboutSilverine() {
   return (
-    <section className="relative py-16">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-light mb-4" id="aboutUs">
-          About Us
-        </h2>
+    <section className="relative py-20 bg-gradient-to-br from-white via-gray-100 to-gray-200">
+      <div className="container mx-auto text-center text-red-800 mb-12">
+        <motion.h2
+          className="text-5xl mb-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          About Silverine
+        </motion.h2>
+        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+          The Future of Genetic Intelligence
+        </p>
       </div>
-      <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-500 mb-6 font-light text-justify">
-              Silverine Labs is an advanced artificial intelligence (AI) model
-              designed to understand and analyze genetic codes across various
-              life forms, including humans, plants, animals, and bacteria.
-              Leveraging cutting-edge technology, Silverine provides deep
-              insights into molecular biology and accelerates innovation in
-              genetic research. One of Silverine’s key strengths is its ability
-              to accurately predict protein structures and functions based on
-              genetic sequences. Additionally, Silverine can be utilized to
-              design new molecules with broad applications in healthcare,
-              pharmaceuticals, and biotechnology industries. For instance, this
-              model can directly predict gene functions without requiring
-              additional training and can generate synthetic molecular complexes
-              such as CRISPR-Cas, which play a crucial role in genetic
-              engineering.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-500 mb-6 font-light text-justify font-light">
-              Silverine is available globally for researchers and developers,
-              offering an AI-powered solution that is both easy to deploy and
-              secure to use. With its adaptive intelligence and analytical
-              capabilities, Silverine is expected to revolutionize molecular
-              biology research, paving the way for breakthroughs in genetic code
-              comprehension and manipulation, while driving significant
-              advancements in gene-based medicine.{" "}
-              <a href="" className="text-blue-500">
-                read more..
-              </a>
-            </p>
-          </div>
-        </div>
+
+      <div className="container mx-auto px-6 flex justify-center">
+        <motion.div
+          className="w-full md:max-w-4xl backdrop-blur-md bg-white/30 border border-white/40 rounded-2xl shadow-xl p-10"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Silverine Labs is an advanced AI model engineered to decode genetic
+            sequences across various life forms. Using cutting-edge technology,
+            Silverine enables deep insights into molecular biology, pushing the
+            boundaries of innovation in genetic research.
+          </p>
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            With its predictive power, Silverine can map protein structures and
+            functions with remarkable accuracy. It also facilitates the design
+            of synthetic molecules, revolutionizing healthcare, pharmaceuticals,
+            and biotech industries.
+          </p>
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Available globally for researchers and developers, Silverine offers
+            an AI-powered solution that is adaptive, secure, and easy to deploy.
+            Its intelligence is set to redefine molecular biology research,
+            unlocking new possibilities in gene-based medicine and synthetic
+            biology.
+          </p>
+          <a
+            href="/pages/roadmap"
+            className="text-red-800 hover:text-blue-400 transition duration-300"
+          >
+            Read more →
+          </a>
+        </motion.div>
       </div>
     </section>
   );

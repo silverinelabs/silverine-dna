@@ -21,7 +21,7 @@ export default function FuturisticFooter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-xl text-black md:text-2xl font-bold tracking-wide font-[Exo]">
+        <h2 className="text-xl text-black md:text-2xl font-bold tracking-wide text-red-800 font-[Exo]">
           Silverine Labs
         </h2>
         <p className="text-gray-400 text-sm mt-2 max-w-lg">

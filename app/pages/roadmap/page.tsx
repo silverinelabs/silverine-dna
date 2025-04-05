@@ -17,7 +17,7 @@ export default function Roadmap() {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
         {/* Phase 1: Early Development */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-2xl font-semibold text-teal-500 mb-4">
+          <h3 className="text-2xl font-semibold text-red-800 mb-4">
             Phase 1: Early Development
           </h3>
           <p className="text-lg text-gray-500 mb-6">
@@ -40,7 +40,7 @@ export default function Roadmap() {
 
         {/* Phase 2: Core Capabilities Enhancement */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-2xl font-semibold text-teal-500 mb-4">
+          <h3 className="text-2xl font-semibold text-red-800 mb-4">
             Phase 2: Core Capabilities Enhancement
           </h3>
           <p className="text-lg text-gray-500 mb-6">
@@ -62,7 +62,7 @@ export default function Roadmap() {
 
         {/* Phase 3: Industry Integration & Global Deployment */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-2xl font-semibold text-teal-500 mb-4">
+          <h3 className="text-2xl font-semibold text-red-800 mb-4">
             Phase 3: Industry Integration & Global Deployment
           </h3>
           <p className="text-lg text-gray-500 mb-6">
@@ -83,7 +83,7 @@ export default function Roadmap() {
 
         {/* Phase 4: Future Directions */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-2xl font-semibold text-teal-500 mb-4">
+          <h3 className="text-2xl font-semibold text-red-800 mb-4">
             Phase 4: Future Directions
           </h3>
           <p className="text-lg text-gray-500 mb-6">

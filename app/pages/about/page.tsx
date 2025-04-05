@@ -55,7 +55,7 @@ export default function AboutUs() {
         </p>
         <a href="/" className="w-full">
           <Button
-            className="bg-teal-600 text-white hover:bg-teal-500 transition-all py-2 mt-6 rounded-lg shadow-lg transform hover:scale-105"
+            className="bg-red-800 text-white hover:bg-red-800 transition-all py-2 mt-6 rounded-lg shadow-lg transform hover:scale-105"
           >
             Back
           </Button>

@@ -11,7 +11,7 @@ function ProteinModel() {
 export default function AnalysisCard() {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-4 mb-4">
         <Card className="p-6 text-white">
           <CardHeader className="text-center">
             <CardTitle className="text-3xl font-semibold text-black font-light">
@@ -21,7 +21,7 @@ export default function AnalysisCard() {
           <CardContent className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
             {/* Description */}
             <div className="flex-1 text-left space-y-3">
-              <p className="text-2xl font-medium text-blue-400">
+              <p className="text-2xl font-medium text-red-800">
                 Structural Analysis Report
               </p>
               <div className="text-md text-gray-500 leading-relaxed space-y-1">
